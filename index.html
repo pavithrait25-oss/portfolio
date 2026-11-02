@@ -1,0 +1,1488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!-- Primary SEO Meta Tags -->
+  <title>Pavithra | Aspiring .NET Developer &amp; Software Trainer Portfolio</title>
+  <meta name="title" content="Pavithra | Aspiring .NET Developer &amp; Software Trainer Portfolio" />
+  <meta name="description" content="Personal portfolio of Pavithra — Aspiring .NET Developer with 2 years of Software Trainer experience. Skilled in C#, .NET, ASP.NET, SQL Server, HTML, CSS, and JavaScript." />
+  <meta name="keywords" content="Pavithra, .NET Developer, C# Developer, ASP.NET, SQL Server, Software Trainer, Web Developer, Hosur, Portfolio, Sri Homemade Cakes" />
+  <meta name="author" content="Pavithra" />
+  <meta name="theme-color" content="#06080e" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Pavithra | Aspiring .NET Developer Portfolio" />
+  <meta property="og:description" content="Showcasing skills in C#, .NET, ASP.NET, SQL Server, and full-stack web development. Former Software Trainer." />
+  <meta property="og:image" content="assets/images/sri-cakes-mockup.svg" />
+
+  <!-- Preconnect & Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ========================================================
+       PREMIUM LOADING OVERLAY
+       ======================================================== -->
+  <div id="loader-overlay" class="loader-overlay" aria-hidden="true">
+    <div class="loader-particles">
+      <span></span><span></span><span></span><span></span><span></span>
+    </div>
+    <div class="loader-content">
+      <div class="loader-logo-wrap">
+        <div class="loader-ring"></div>
+        <div class="loader-logo">PV</div>
+      </div>
+      <p class="loader-text">Loading Portfolio<span class="dots"><span>.</span><span>.</span><span>.</span></span></p>
+      <div class="loader-progress-track">
+        <div class="loader-progress-fill"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Accessibility Skip Link -->
+  <a href="#home" class="skip-link">Skip to main content</a>
+
+  <!-- Ambient Animated Background Glows -->
+  <div class="ambient-canvas" aria-hidden="true">
+    <div class="ambient-grid"></div>
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+    <div class="glow-orb orb-3"></div>
+  </div>
+
+  <!-- ========================================================
+       STICKY GLASSMORPHISM NAVBAR
+       ======================================================== -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <!-- Monogram Brand Logo -->
+      <a href="#home" class="nav-brand" aria-label="Pavithra Home">
+        <span class="brand-monogram">PP</span>
+        <span class="brand-name">Pavithra<span class="brand-dot">.</span></span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-desktop" aria-label="Primary Navigation">
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#resume" class="nav-link">Resume</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Navbar Action Buttons -->
+      <div class="nav-actions">
+        <a href="resume/Pavithra_Resume.pdf" download="Pavithra_Resume.pdf" class="btn btn-sm btn-ghost nav-resume-btn">
+          <svg class="icon-svg" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 15V3m0 12l-4-4m4 4l4-4M4 17v2a2 2 0 002 2h12a2 2 0 002-2v-2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span>CV</span>
+        </a>
+        <a href="#contact" class="btn btn-sm btn-primary">Let's Talk</a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-drawer">
+          <span class="bar bar-1"></span>
+          <span class="bar bar-2"></span>
+          <span class="bar bar-3"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Overlay -->
+    <div class="mobile-drawer" id="mobile-drawer" aria-hidden="true">
+      <div class="drawer-header">
+        <div class="drawer-brand">
+          <span class="brand-monogram">PV</span>
+          <span>Pavithra</span>
+        </div>
+        <button class="drawer-close" id="drawer-close" aria-label="Close menu">&times;</button>
+      </div>
+      <ul class="mobile-links">
+        <li><a href="#home" class="mobile-link"><span>01</span> Home</a></li>
+        <li><a href="#about" class="mobile-link"><span>02</span> About Me</a></li>
+        <li><a href="#education" class="mobile-link"><span>03</span> Education</a></li>
+        <li><a href="#skills" class="mobile-link"><span>04</span> Skills</a></li>
+        <li><a href="#projects" class="mobile-link"><span>05</span> Projects</a></li>
+        <li><a href="#services" class="mobile-link"><span>06</span> Services</a></li>
+        <li><a href="#resume" class="mobile-link"><span>07</span> Resume</a></li>
+        <li><a href="#contact" class="mobile-link"><span>08</span> Contact</a></li>
+      </ul>
+      <div class="drawer-footer">
+        <a href="resume/Pavithra_Resume.pdf" download="Pavithra_Resume.pdf" class="btn btn-primary btn-block">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 15V3m0 12l-4-4m4 4l4-4M4 17v2a2 2 0 002 2h12a2 2 0 002-2v-2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Download Resume (PDF)
+        </a>
+        <div class="drawer-socials">
+          <a href="https://wa.me/919566750694?text=Hi%20Pavithra,%20I%20saw%20your%20portfolio!" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-1.9-.9-.3-.1-.4-.1-.6.1-.2.3-.7.9-.8 1-.2.2-.3.2-.5.1-.3-.1-1.2-.4-2.2-1.4-.8-.7-1.4-1.6-1.5-1.9-.2-.3 0-.4.1-.6.1-.1.3-.3.4-.5.1-.1.2-.3.2-.4.1-.2 0-.3 0-.5-.1-.1-.6-1.5-.8-2-.2-.5-.4-.4-.6-.5h-.5c-.2 0-.5.1-.7.3-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3 4.8 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.5-.3z"/><path d="M12 2a10 10 0 00-8.5 15.2L2 22l4.9-1.5A10 10 0 1012 2z"/></svg></a>
+          <a href="mailto:pavithrait25@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6.5c0-1.1.9-2 2-2h14a2 2 0 012 2v11a2 2 0 01-2 2H5a2 2 0 01-2-2v-11z"/><path d="M3.5 7l8.5 6 8.5-6"/></svg></a>
+          <a href="https://github.com/pavithrait25-oss" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.09 3.29 9.4 7.86 10.93.57.1.78-.25.78-.55 0-.27-.01-1.16-.02-2.11-3.2.7-3.87-1.36-3.87-1.36-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.17.08 1.78 1.2 1.78 1.2 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.25.45-2.28 1.18-3.08-.12-.29-.51-1.46.11-3.04 0 0 .96-.31 3.15 1.18a10.9 10.9 0 015.74 0c2.19-1.49 3.15-1.18 3.15-1.18.62 1.58.23 2.75.11 3.04.73.8 1.18 1.83 1.18 3.08 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.06.78 2.14 0 1.55-.01 2.79-.01 3.17 0 .3.2.66.79.55A10.52 10.52 0 0023.5 12c0-6.35-5.15-11.5-11.5-11.5z"/></svg></a>
+          <a href="https://www.linkedin.com/in/pavithra-p-51031b39b/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.27c-.97 0-1.75-.79-1.75-1.76s.78-1.75 1.75-1.75 1.75.78 1.75 1.75-.78 1.76-1.75 1.76zm13.5 12.27h-3v-5.6c0-3.37-4-3.11-4 0v5.6h-3v-11h3v1.76c1.4-2.58 7-2.77 7 2.47v6.77z"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ========================================================
+         SECTION 1: HOME (HERO)
+         ======================================================== -->
+    <section id="home" class="hero-section">
+      <div class="container hero-container">
+        
+        <!-- Left: Hero Text & Information -->
+        <div class="hero-content reveal">
+          <!-- Availability Badge -->
+          <div class="status-badge">
+            <span class="status-dot"></span>
+            <span>Open to .NET Developer &amp; IT Opportunities</span>
+          </div>
+
+          <!-- Main Greeting -->
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Pavithra</span>
+          </h1>
+
+          <!-- Dynamic Typing Title -->
+          <h2 class="hero-subtitle">
+            <span class="subtitle-prefix">I am an </span>
+            <span id="typing-text" class="typing-text">Aspiring .NET Developer</span>
+            <span class="typing-cursor" aria-hidden="true">|</span>
+          </h2>
+
+          <!-- Elevator Pitch -->
+          <p class="hero-description">
+            Passionate software developer with <strong>2 years of Software Trainer experience</strong>, transitioning into full-time .NET development. Grounded in C#, .NET architecture, SQL Server, and modern web technologies to build secure, scalable, and intuitive software applications.
+          </p>
+
+          <!-- Action Buttons -->
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary btn-lg">
+              <span>View Projects</span>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a href="resume/Pavithra_Resume.pdf" download="Pavithra_Resume.pdf" class="btn btn-outline btn-lg">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 15V3m0 12l-4-4m4 4l4-4M4 17v2a2 2 0 002 2h12a2 2 0 002-2v-2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span>Download Resume</span>
+            </a>
+          </div>
+
+          <!-- Social Links Bar -->
+          <div class="hero-socials">
+            <span class="social-label">Connect:</span>
+            <a href="mailto:pavithrait25@gmail.com" class="social-icon" aria-label="Send Email" title="Email: pavithrait25@gmail.com">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6.5c0-1.1.9-2 2-2h14a2 2 0 012 2v11a2 2 0 01-2 2H5a2 2 0 01-2-2v-11z"/><path d="M3.5 7l8.5 6 8.5-6"/></svg>
+            </a>
+            <a href="https://wa.me/919566750694?text=Hi%20Pavithra,%20I%20saw%20your%20portfolio!" target="_blank" rel="noopener" class="social-icon" aria-label="WhatsApp Chat" title="Chat on WhatsApp">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-1.9-.9-.3-.1-.4-.1-.6.1-.2.3-.7.9-.8 1-.2.2-.3.2-.5.1-.3-.1-1.2-.4-2.2-1.4-.8-.7-1.4-1.6-1.5-1.9-.2-.3 0-.4.1-.6.1-.1.3-.3.4-.5.1-.1.2-.3.2-.4.1-.2 0-.3 0-.5-.1-.1-.6-1.5-.8-2-.2-.5-.4-.4-.6-.5h-.5c-.2 0-.5.1-.7.3-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3 4.8 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.5-.3z"/><path d="M12 2a10 10 0 00-8.5 15.2L2 22l4.9-1.5A10 10 0 1012 2z"/></svg>
+            </a>
+            <!-- EDITABLE: Replace with your actual GitHub profile link if updated -->
+            <a href="https://github.com/pavithrait25-oss" target="_blank" rel="noopener" class="social-icon" aria-label="GitHub Profile" title="GitHub">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.09 3.29 9.4 7.86 10.93.57.1.78-.25.78-.55 0-.27-.01-1.16-.02-2.11-3.2.7-3.87-1.36-3.87-1.36-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.17.08 1.78 1.2 1.78 1.2 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.25.45-2.28 1.18-3.08-.12-.29-.51-1.46.11-3.04 0 0 .96-.31 3.15 1.18a10.9 10.9 0 015.74 0c2.19-1.49 3.15-1.18 3.15-1.18.62 1.58.23 2.75.11 3.04.73.8 1.18 1.83 1.18 3.08 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.06.78 2.14 0 1.55-.01 2.79-.01 3.17 0 .3.2.66.79.55A10.52 10.52 0 0023.5 12c0-6.35-5.15-11.5-11.5-11.5z"/></svg>
+            </a>
+            <!-- EDITABLE: Replace with your actual LinkedIn profile link if updated -->
+            <a href="https://www.linkedin.com/in/pavithra-p-51031b39b/" target="_blank" rel="noopener" class="social-icon" aria-label="LinkedIn Profile" title="LinkedIn">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.27c-.97 0-1.75-.79-1.75-1.76s.78-1.75 1.75-1.75 1.75.78 1.75 1.75-.78 1.76-1.75 1.76zm13.5 12.27h-3v-5.6c0-3.37-4-3.11-4 0v5.6h-3v-11h3v1.76c1.4-2.58 7-2.77 7 2.47v6.77z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: Interactive Developer Showcase Card -->
+        <div class="hero-visual reveal">
+          <div class="visual-wrapper">
+            <!-- Ambient Glowing Orb behind Card -->
+            <div class="visual-glow"></div>
+
+            <!-- Floating Tech Badges -->
+            <div class="floating-badge badge-csharp">
+              <span class="badge-icon">C#</span>
+              <span>OOP &amp; LINQ</span>
+            </div>
+            <div class="floating-badge badge-dotnet">
+              <span class="badge-icon">.NET</span>
+              <span>ASP.NET Core</span>
+            </div>
+            <div class="floating-badge badge-sql">
+              <span class="badge-icon">SQL</span>
+              <span>SQL Server</span>
+            </div>
+
+            <!-- Terminal / Code Card -->
+            <div class="code-card" id="heroCodeCard">
+              <div class="card-window-bar">
+                <div class="window-dots">
+                  <span class="dot dot-red"></span>
+                  <span class="dot dot-yellow"></span>
+                  <span class="dot dot-green"></span>
+                </div>
+                <div class="window-title">
+                  <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+                  <span>Pavithra.cs</span>
+                </div>
+                <span class="window-badge">C# 12 • .NET</span>
+              </div>
+              
+              <div class="code-body">
+                <pre><code><span class="code-keyword">namespace</span> <span class="code-namespace">Portfolio</span>;
+
+<span class="code-keyword">public class</span> <span class="code-class">DeveloperProfile</span>
+{
+    <span class="code-keyword">public string</span> <span class="code-prop">Name</span> { <span class="code-keyword">get</span>; } = <span class="code-string">"Pavithra P"</span>;
+    <span class="code-keyword">public string</span> <span class="code-prop">TargetRole</span> { <span class="code-keyword">get</span>; } = <span class="code-string">"Aspiring .NET Developer"</span>;
+    <span class="code-keyword">public string</span> <span class="code-prop">Location</span> { <span class="code-keyword">get</span>; } = <span class="code-string">"Hosur, Tamil Nadu, India"</span>;
+    
+    <span class="code-keyword">public string</span>[] <span class="code-prop">CoreSkills</span> => <span class="code-keyword">new</span>[]
+    {
+        <span class="code-string">"C#"</span>, <span class="code-string">".NET"</span>, <span class="code-string">"ASP.NET"</span>, <span class="code-string">"SQL Server"</span>,
+        <span class="code-string">"C"</span>, <span class="code-string">"C++"</span>, <span class="code-string">"HTML"</span>, <span class="code-string">"CSS"</span>, <span class="code-string">"JavaScript"</span>
+    };
+
+    <span class="code-keyword">public string</span> <span class="code-prop">Experience</span> => <span class="code-string">"2 Yrs Software Trainer"</span>;
+    <span class="code-keyword">public bool</span> <span class="code-prop">OpenToHiring</span> => <span class="code-literal">true</span>;
+}</code></pre>
+              </div>
+
+              <div class="card-footer-status">
+                <span class="status-indicator"></span>
+                <span>Ready for compilation &amp; deployment</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Hero Scroll Indicator -->
+      <a href="#about" class="hero-scroll" aria-label="Scroll down to About section">
+        <span class="scroll-text">Explore</span>
+        <div class="scroll-mouse">
+          <span class="mouse-wheel"></span>
+        </div>
+      </a>
+    </section>
+
+    <!-- ========================================================
+         SECTION 2: ABOUT ME
+         ======================================================== -->
+    <section id="about" class="section about-section">
+      <div class="container">
+        
+        <!-- Section Header -->
+        <div class="section-header reveal">
+          <div class="section-pill">01 / ABOUT ME</div>
+          <h2 class="section-title">Bridging Teaching Clarity with Software Engineering</h2>
+          <p class="section-subtitle">Dedicated to structured programming, clean architectural principles, and continuous growth.</p>
+        </div>
+
+        <div class="about-grid">
+          
+          <!-- Left Column: Narrative Content -->
+          <div class="about-narrative reveal">
+            <div class="narrative-block">
+              <div class="block-icon">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+              </div>
+              <div class="block-text">
+                <h3>Software Trainer Experience (2016 – 2018)</h3>
+                <p>
+                  My foundational technology experience began as a <strong>Software Trainer at Apollo Computer Education</strong> (Srivilliputhur, Virudhunagar). During those two years, I instructed and guided learners in core programming languages including <strong>C, C++, application development fundamentals</strong>, and basic software logic.
+                </p>
+                <p>
+                  Training students demanded crystal-clear communication, structured problem breakdown, debugging real student code, and maintaining deep conceptual mastery in Object-Oriented Programming (OOP) and algorithmic thinking.
+                </p>
+              </div>
+            </div>
+
+            <div class="narrative-block">
+              <div class="block-icon">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              </div>
+              <div class="block-text">
+                <h3>Career Goal as an Aspiring .NET Developer</h3>
+                <p>
+                  My goal is to translate this pedagogical rigor and analytical problem-solving into a rewarding career as a <strong>Junior .NET / Software Developer</strong>. I am focused on engineering dependable backend services, robust database solutions with <strong>SQL Server</strong>, and modern web applications with <strong>ASP.NET</strong>.
+                </p>
+                <p>
+                  I enjoy turning real-world business requirements into well-structured code, as demonstrated by my commercial web project for <em>Sri Homemade Cakes</em>. I am eager to contribute to an engineering team that values clean code, dependability, and shared learning.
+                </p>
+              </div>
+            </div>
+
+            <!-- Key Highlights Pill Tags -->
+            <div class="about-tags">
+              <span class="tag-item">✓ Strong OOP Principles</span>
+              <span class="tag-item">✓ Structured Debugging</span>
+              <span class="tag-item">✓ Database Relational Logic</span>
+              <span class="tag-item">✓ Clear Technical Communication</span>
+              <span class="tag-item">✓ Rapid Learner Mindset</span>
+            </div>
+          </div>
+
+          <!-- Right Column: Quick Profile Details & Stat Counters -->
+          <div class="about-sidebar reveal">
+            <!-- Profile Card -->
+            <div class="profile-card">
+              <div class="profile-avatar-container">
+                <img src="assets/images/profile-avatar.svg" alt="Pavithra Profile Representation" class="profile-avatar-img" width="120" height="120" loading="lazy" />
+                <span class="profile-online-badge" title="Active"></span>
+              </div>
+              <div class="profile-info-header">
+                <h3>Pavithra P</h3>
+                <p class="profile-title-tag">Aspiring .NET Developer</p>
+              </div>
+
+              <!-- Key Fact List -->
+              <ul class="profile-fact-list">
+                <li>
+                  <span class="fact-label">Location:</span>
+                  <span class="fact-value">Hosur, Tamil Nadu, India</span>
+                </li>
+                <li>
+                  <span class="fact-label">Experience:</span>
+                  <span class="fact-value">2 Years (Software Trainer)</span>
+                </li>
+                <li>
+                  <span class="fact-label">Highest Degree:</span>
+                  <span class="fact-value">M.Sc. Computer Science &amp; IT</span>
+                </li>
+                <li>
+                  <span class="fact-label">Languages:</span>
+                  <span class="fact-value">English, Tamil</span>
+                </li>
+                <li>
+                  <span class="fact-label">Primary Stack:</span>
+                  <span class="fact-value highlight-stack">C#, .NET, SQL Server</span>
+                </li>
+                <li>
+                  <span class="fact-label">Availability:</span>
+                  <span class="fact-value status-available">Immediate / Flexible</span>
+                </li>
+              </ul>
+
+              <div class="profile-cta">
+                <a href="#contact" class="btn btn-primary btn-block">Get In Touch</a>
+              </div>
+            </div>
+
+            <!-- Quantitative Impact Stats -->
+            <div class="stats-grid">
+              <div class="stat-card">
+                <div class="stat-number" data-target="2">0</div>
+                <div class="stat-unit">+</div>
+                <p class="stat-title">Years Trainer Experience</p>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number" data-target="100">0</div>
+                <div class="stat-unit">+</div>
+                <p class="stat-title">Learners Mentored</p>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number" data-target="9">0</div>
+                <div class="stat-unit">Core</div>
+                <p class="stat-title">Demonstrable Skills</p>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number" data-target="100">0</div>
+                <div class="stat-unit">%</div>
+                <p class="stat-title">Focus &amp; Dedication</p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================
+         SECTION 3: EDUCATION (EDITABLE)
+         ======================================================== -->
+    <section id="education" class="section education-section">
+      <div class="container">
+        
+        <!-- Section Header -->
+        <div class="section-header reveal">
+          <div class="section-pill">02 / ACADEMIC BACKGROUND</div>
+          <h2 class="section-title">Education &amp; Qualifications</h2>
+          <p class="section-subtitle">Academic foundations in Computer Science, specialized certifications, and continuous development.</p>
+        </div>
+
+        <!-- 
+        ========================================================================
+        EDITABLE EDUCATION SECTION
+        You can easily modify, add, or remove your academic qualifications below.
+        Simply update the degree name, college name, year, or description.
+        ========================================================================
+        -->
+        <div class="education-timeline reveal">
+
+          <!-- Education Item 1: Post Graduate Degree -->
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <span class="marker-dot"></span>
+              <span class="marker-line"></span>
+            </div>
+            <div class="timeline-card">
+              <div class="card-header-flex">
+                <div>
+                  <span class="timeline-badge degree-badge">Post Graduate Degree</span>
+                  <h3 class="card-heading">Master of Science (M.Sc.) — Computer Science &amp; IT</h3>
+                  <h4 class="card-institution">Rajus College, Rajapalayam, Virudhunagar</h4>
+                </div>
+                <span class="timeline-year">Post Graduation</span>
+              </div>
+              <p class="card-desc">
+                In-depth coursework in Advanced Computer Science, Object-Oriented Software Systems, Relational Database Management, Software Engineering Methodologies, and Network Fundamentals.
+              </p>
+              <div class="card-chips">
+                <span>Computer Science</span>
+                <span>Information Technology</span>
+                <span>Database Concepts</span>
+                <span>Software Engineering</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Education Item 2: Under Graduate Degree -->
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <span class="marker-dot"></span>
+              <span class="marker-line"></span>
+            </div>
+            <div class="timeline-card">
+              <div class="card-header-flex">
+                <div>
+                  <span class="timeline-badge degree-badge">Under Graduate Degree</span>
+                  <h3 class="card-heading">Bachelor of Science (B.Sc.) — Computer Science &amp; IT</h3>
+                  <h4 class="card-institution">Ayya Nadar Janaki Ammal College, Sivakasi, Virudhunagar</h4>
+                </div>
+                <span class="timeline-year">Graduation</span>
+              </div>
+              <p class="card-desc">
+                Core curriculum emphasizing programming fundamentals (C and C++), Data Structures, Algorithms, Computer Architecture, Database Design, and Operating Systems.
+              </p>
+              <div class="card-chips">
+                <span>C &amp; C++ Programming</span>
+                <span>Data Structures</span>
+                <span>RDBMS</span>
+                <span>Operating Systems</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Education Item 3: Certifications & Training -->
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <span class="marker-dot"></span>
+              <span class="marker-line"></span>
+            </div>
+            <div class="timeline-card cert-card">
+              <div class="card-header-flex">
+                <div>
+                  <span class="timeline-badge cert-badge">Professional Certifications</span>
+                  <h3 class="card-heading">Specialized Technical Certifications</h3>
+                  <h4 class="card-institution">Apollo Computer Education &amp; Vetri Technology Solutions</h4>
+                </div>
+                <span class="timeline-year">Verified Training</span>
+              </div>
+              
+              <div class="cert-list">
+                <div class="cert-entry">
+                  <div class="cert-dot"></div>
+                  <div>
+                    <strong>.NET, C# &amp; ASP.NET Programming</strong>
+                    <p>Apollo Computer Education — Comprehensive training in C# syntax, OOP architecture, and web development fundamentals.</p>
+                  </div>
+                </div>
+                <div class="cert-entry">
+                  <div class="cert-dot"></div>
+                  <div>
+                    <strong>HTML &amp; Modern Web Designing</strong>
+                    <p>Web design fundamentals, semantic page structure, CSS styling, and responsive layout foundations.</p>
+                  </div>
+                </div>
+                <div class="cert-entry">
+                  <div class="cert-dot"></div>
+                  <div>
+                    <strong>Software Quality Assurance &amp; Testing</strong>
+                    <p>Vetri Technology Solutions — Software testing life cycle, manual testing, test case authoring, and bug reporting.</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- 
+          EDITABLE PLACEHOLDER: You can duplicate this block to add new certifications or future courses!
+          -->
+          <div class="timeline-item editable-hint-item">
+            <div class="timeline-marker">
+              <span class="marker-dot hint-dot"></span>
+            </div>
+            <div class="timeline-card hint-card">
+              <div class="hint-content">
+                <span class="hint-icon">💡</span>
+                <div>
+                  <strong>Easily Editable Education Section</strong>
+                  <p>To update your graduation years, add new degrees, or insert new certifications, open <code>index.html</code> and edit the clear placeholder tags marked in this section.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================
+         SECTION 4: SKILLS
+         (Strictly the 9 skills requested: C, C++, C#, .NET,
+          ASP.NET, SQL Server, HTML, CSS, JavaScript)
+         ======================================================== -->
+    <section id="skills" class="section skills-section">
+      <div class="container">
+        
+        <!-- Section Header -->
+        <div class="section-header reveal">
+          <div class="section-pill">03 / TECHNICAL CAPABILITIES</div>
+          <h2 class="section-title">Skills &amp; Technologies</h2>
+          <p class="section-subtitle">Core technical skills I can confidently demonstrate and apply in practical software development.</p>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="skills-filter-tabs reveal">
+          <button class="filter-tab active" data-filter="all">All Skills (9)</button>
+          <button class="filter-tab" data-filter="dotnet">.NET &amp; Core Languages</button>
+          <button class="filter-tab" data-filter="database">Database</button>
+          <button class="filter-tab" data-filter="web">Web Development</button>
+        </div>
+
+        <!-- Skills Grid -->
+        <div class="skills-grid reveal">
+
+          <!-- 1. C# -->
+          <div class="skill-card" data-category="dotnet">
+            <div class="skill-header">
+              <div class="skill-icon icon-csharp">
+                <svg viewBox="0 0 32 32" width="28" height="28" fill="currentColor">
+                  <path d="M16 3L3 10.5v11L16 29l13-7.5v-11L16 3zm0 3.2l9.8 5.7v8.2L16 25.8 6.2 20.1v-8.2L16 6.2z"/>
+                  <path d="M17.5 13.5c-1 0-1.8.8-1.8 1.8v1.4c0 1 .8 1.8 1.8 1.8 1 0 1.8-.8 1.8-1.8v-.4h-1.8v-1h2.8v1.4c0 1.5-1.3 2.8-2.8 2.8-1.5 0-2.8-1.3-2.8-2.8v-1.4c0-1.5 1.3-2.8 2.8-2.8 1.3 0 2.4.9 2.7 2.1h-1.1c-.2-.6-.9-1.1-1.6-1.1zM23 14h1v1.5h1.5v1H24V18h-1v-1.5h-1.5v-1H23V14z"/>
+                </svg>
+              </div>
+              <div class="skill-meta">
+                <h3 class="skill-name">C#</h3>
+                <span class="skill-badge badge-strong">Confident</span>
+              </div>
+            </div>
+            <p class="skill-desc">
+              Object-oriented programming, classes &amp; inheritance, encapsulation, LINQ, exception handling, collections (List, Dictionary), and writing clean, type-safe C# code.
+            </p>
+            <div class="skill-progress">
+              <div class="progress-bar-wrap">
+                <div class="progress-bar-fill" data-level="85" style="--skill-width: 85%;"></div>
+              </div>
+              <span class="progress-text">85% Proficiency</span>
+            </div>
+          </div>
+
+          <!-- 2. .NET -->
+          <div class="skill-card" data-category="dotnet">
+            <div class="skill-header">
+              <div class="skill-icon icon-dotnet">
+                <svg viewBox="0 0 32 32" width="28" height="28" fill="currentColor">
+                  <path d="M16 3C8.82 3 3 8.82 3 16s5.82 13 13 13 13-5.82 13-13S23.18 3 16 3zm-2.8 17.5h-2.1l-3.3-6.5v6.5H6.2V11.2h2.1l3.3 6.5v-6.5h1.6v9.3zm4.5 0h-1.7V11.2h1.7v9.3zm7.5 0h-5.2V11.2h5.2v1.5H22v2.3h2.8v1.5H22v2.5h3.2v1.5z"/>
+                </svg>
+              </div>
+              <div class="skill-meta">
+                <h3 class="skill-name">.NET</h3>
+                <span class="skill-badge badge-strong">Confident</span>
+              </div>
+            </div>
+            <p class="skill-desc">
+              Understanding of the .NET ecosystem, Common Language Runtime (CLR), solution &amp; project structuring, dependency injection patterns, and building console/web solutions.
+            </p>
+            <div class="skill-progress">
+              <div class="progress-bar-wrap">
+                <div class="progress-bar-fill" data-level="80" style="--skill-width: 80%;"></div>
+              </div>
+              <span class="progress-text">80% Proficiency</span>
+            </div>
+          </div>
+
+          <!-- 3. ASP.NET -->
+          <div class="skill-card" data-category="dotnet">
+            <div class="skill-header">
+              <div class="skill-icon icon-aspnet">
+                <svg viewBox="0 0 32 32" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="4" y="6" width="24" height="20" rx="3" stroke-linecap="round"/>
+                  <path d="M10 16l4-4 4 4M10 20h12" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="skill-meta">
+                <h3 class="skill-name">ASP.NET</h3>
+                <span class="skill-badge badge-focus">Target Focus</span>
+              </div>
+            </div>
+            <p class="skill-desc">
+              Web application architecture, Model-View-Controller (MVC) concepts, controllers, routing, handling HTTP requests, models, and building foundational CRUD web features.
+            </p>
+            <div class="skill-progress">
+              <div class="progress-bar-wrap">
+                <div class="progress-bar-fill" data-level="75" style="--skill-width: 75%;"></div>
+              </div>
+              <span class="progress-text">75% Proficiency</span>
+            </div>
+          </div>
+
+          <!-- 4. SQL Server -->
+          <div class="skill-card" data-category="database">
+            <div class="skill-header">
+              <div class="skill-icon icon-sql">
+                <svg viewBox="0 0 32 32" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
+                  <ellipse cx="16" cy="7" rx="11" ry="4"/>
+                  <path d="M5 7v9c0 2.2 4.9 4 11 4s11-1.8 11-4V7M5 16v9c0 2.2 4.9 4 11 4s11-1.8 11-4V7M5 16v9c0 2.2 4.9 4 11 4s11-1.8 11-4v-9"/>
+                </svg>
+              </div>
+              <div class="skill-meta">
+                <h3 class="skill-name">SQL Server</h3>
+                <span class="skill-badge badge-strong">Confident</span>
+              </div>
+            </div>
+            <p class="skill-desc">
+              Relational database design, writing queries (SELECT, INSERT, UPDATE, DELETE), primary &amp; foreign keys, table joins (INNER, LEFT, RIGHT), views, and schema normalization.
+            </p>
+            <div class="skill-progress">
+              <div class="progress-bar-wrap">
+                <div class="progress-bar-fill" data-level="85" style="--skill-width: 85%;"></div>
+              </div>
+              <span class="progress-text">85% Proficiency</span>
+            </div>
+          </div>
+
+          <!-- 5. C++ -->
+          <div class="skill-card" data-category="dotnet">
+            <div class="skill-header">
+              <div class="skill-icon icon-cpp">
+                <svg viewBox="0 0 32 32" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="16" cy="16" r="13"/>
+                  <path d="M14 11.5a5 5 0 100 9M21 13v6M18 16h6M27 13v6M24 16h6" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <div class="skill-meta">
+                <h3 class="skill-name">C++</h3>
+                <span class="skill-badge badge-strong">Trained &amp; Taught</span>
+              </div>
+            </div>
+            <p class="skill-desc">
+              Object-oriented programming logic taught as a Software Trainer: classes, constructors, function overloading, inheritance, pointers, and memory-conscious programming.
+            </p>
+            <div class="skill-progress">
+              <div class="progress-bar-wrap">
+                <div class="progress-bar-fill" data-level="88" style="--skill-width: 88%;"></div>
+              </div>
+              <span class="progress-text">88% Proficiency</span>
+            </div>
+          </div>
+
+          <!-- 6. C -->
+          <div class="skill-card" data-category="dotnet">
+            <div class="skill-header">
+              <div class="skill-icon icon-c">
+                <svg viewBox="0 0 32 32" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="16 3 28 9.5 28 22.5 16 29 4 22.5 4 9.5 16 3"/>
+                  <path d="M19 12a5 5 0 100 8" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <div class="skill-meta">
+                <h3 class="skill-name">C</h3>
+                <span class="skill-badge badge-strong">Trained &amp; Taught</span>
+              </div>
+            </div>
+            <p class="skill-desc">
+              Strong procedural fundamentals: variables, data types, conditional branching, loops, arrays, strings, functions, structures, and algorithmic logic taught to hundreds of students.
+            </p>
+            <div class="skill-progress">
+              <div class="progress-bar-wrap">
+                <div class="progress-bar-fill" data-level="90" style="--skill-width: 90%;"></div>
+              </div>
+              <span class="progress-text">90% Proficiency</span>
+            </div>
+          </div>
+
+          <!-- 7. HTML -->
+          <div class="skill-card" data-category="web">
+            <div class="skill-header">
+              <div class="skill-icon icon-html">
+                <svg viewBox="0 0 32 32" width="28" height="28" fill="currentColor">
+                  <path d="M6 3l2.2 24.5L16 30l7.8-2.5L26 3H6zm16.5 6.5h-13l.3 3.5h9.4l-.4 4.5-2.8.9-2.8-.9-.2-2.1H10l.3 4 5.7 1.8 5.7-1.8.8-9.9z"/>
+                </svg>
+              </div>
+              <div class="skill-meta">
+                <h3 class="skill-name">HTML</h3>
+                <span class="skill-badge badge-strong">Certified</span>
+              </div>
+            </div>
+            <p class="skill-desc">
+              Semantic HTML5 markup, accessibility standards (ARIA, alt tags), structured document hierarchy, form controls and validation, SEO-friendly page structure.
+            </p>
+            <div class="skill-progress">
+              <div class="progress-bar-wrap">
+                <div class="progress-bar-fill" data-level="92" style="--skill-width: 92%;"></div>
+              </div>
+              <span class="progress-text">92% Proficiency</span>
+            </div>
+          </div>
+
+          <!-- 8. CSS -->
+          <div class="skill-card" data-category="web">
+            <div class="skill-header">
+              <div class="skill-icon icon-css">
+                <svg viewBox="0 0 32 32" width="28" height="28" fill="currentColor">
+                  <path d="M6 3l2.2 24.5L16 30l7.8-2.5L26 3H6zm16.4 6.5l-.2 2.5H12.7l.2 2.5h9.1l-.7 7.5-5.3 1.7-5.3-1.7-.3-3.6h3l.2 1.7 2.4.7 2.4-.7.3-3.1H9.8L9 7.5l13.4 2z"/>
+                </svg>
+              </div>
+              <div class="skill-meta">
+                <h3 class="skill-name">CSS</h3>
+                <span class="skill-badge badge-strong">Experienced</span>
+              </div>
+            </div>
+            <p class="skill-desc">
+              Responsive layouts using Flexbox and CSS Grid, custom properties (CSS variables), media queries, smooth micro-interactions, animations, and modern glassmorphic styling.
+            </p>
+            <div class="skill-progress">
+              <div class="progress-bar-wrap">
+                <div class="progress-bar-fill" data-level="88" style="--skill-width: 88%;"></div>
+              </div>
+              <span class="progress-text">88% Proficiency</span>
+            </div>
+          </div>
+
+          <!-- 9. JavaScript -->
+          <div class="skill-card" data-category="web">
+            <div class="skill-header">
+              <div class="skill-icon icon-js">
+                <svg viewBox="0 0 32 32" width="28" height="28" fill="currentColor">
+                  <rect x="3" y="3" width="26" height="26" rx="4" fill="#F7DF1E"/>
+                  <path d="M19 14v8c0 1.5-.9 2.2-2.3 2.2-1.3 0-2.1-.6-2.5-1.4l1.6-1c.2.5.5.8 1 .8.5 0 .8-.3.8-.9V14h1.4zm6.7 3.8c-.8 0-1.4-.4-1.7-.9l1.6-.9c.2.3.4.5.8.5.4 0 .7-.2.7-.5 0-.4-.3-.6-.8-.8l-.8-.3c-1.1-.5-1.6-1.1-1.6-2 0-1.2 1-2.1 2.4-2.1 1 0 1.8.4 2.2 1.1l-1.5.9c-.2-.3-.4-.5-.7-.5-.4 0-.6.2-.6.5 0 .3.2.5.7.7l.7.3c1.3.5 1.8 1.2 1.8 2.1 0 1.4-1.1 2.1-2.5 2.1z" fill="#000000"/>
+                </svg>
+              </div>
+              <div class="skill-meta">
+                <h3 class="skill-name">JavaScript</h3>
+                <span class="skill-badge badge-strong">Confident</span>
+              </div>
+            </div>
+            <p class="skill-desc">
+              DOM manipulation, event-driven programming, ES6+ syntax (arrow functions, template literals, destructuring), asynchronous logic, and building dynamic UI interactions.
+            </p>
+            <div class="skill-progress">
+              <div class="progress-bar-wrap">
+                <div class="progress-bar-fill" data-level="82" style="--skill-width: 82%;"></div>
+              </div>
+              <span class="progress-text">82% Proficiency</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Assurance Banner -->
+        <div class="skills-assurance reveal">
+          <div class="assurance-icon">🎯</div>
+          <div class="assurance-text">
+            <strong>Honest, Demonstrable Skillset</strong>
+            <p>Every skill shown above is one I can comfortably write, explain, and defend in a technical coding interview or live practical assessment.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================
+         SECTION 5: PROJECTS
+         (Featuring Sri Homemade Cakes with live link & description)
+         ======================================================== -->
+    <section id="projects" class="section projects-section">
+      <div class="container">
+        
+        <!-- Section Header -->
+        <div class="section-header reveal">
+          <div class="section-pill">04 / PORTFOLIO WORK</div>
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-subtitle">Real-world commercial websites and applications demonstrating clean implementation and business value.</p>
+        </div>
+
+        <!-- Featured Project 1: Sri Homemade Cakes (Flagship) -->
+        <div class="featured-project-card reveal">
+          <div class="project-grid">
+            
+            <!-- Left: Mockup & Preview Visual -->
+            <div class="project-mockup-wrapper">
+              <div class="browser-frame">
+                <div class="browser-header">
+                  <div class="browser-dots">
+                    <span class="b-dot b-red"></span>
+                    <span class="b-dot b-yellow"></span>
+                    <span class="b-dot b-green"></span>
+                  </div>
+                  <div class="browser-url">
+                    <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V7a4 4 0 018 0v4"/></svg>
+                    <span>sri-homemade-cakes.local</span>
+                  </div>
+                </div>
+                
+                <div class="browser-content">
+                  <img src="assets/images/sri-cakes-mockup.svg" alt="Sri Homemade Cakes Live Website Preview" class="project-image" loading="lazy" />
+                  
+                  <!-- Hover Overlay Actions -->
+                  <div class="mockup-overlay">
+                    <a href="sri-homemade-cakes/index.html" target="_blank" rel="noopener" class="btn btn-sm btn-primary">
+                      <span>Launch Live Site</span>
+                      <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </a>
+                    <button type="button" class="btn btn-sm btn-outline open-preview-modal-btn" data-preview-url="sri-homemade-cakes/index.html" data-preview-title="Sri Homemade Cakes">
+                      <span>In-Page Preview</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right: Project Description & Highlights -->
+            <div class="project-details">
+              <div class="project-badge-row">
+                <span class="project-type-tag">Commercial Website</span>
+                <span class="project-status-tag">🟢 Live &amp; Functional</span>
+              </div>
+
+              <h3 class="project-title">Sri Homemade Cakes — Online Bakery &amp; Direct WhatsApp Ordering</h3>
+
+              <p class="project-description">
+                A modern, attractive, mobile-responsive commercial website developed for <strong>Sri Homemade Cakes</strong>, a boutique home bakery business in India. Designed to showcase handcrafted cakes, provide transparent pricing, and capture direct orders through an automated WhatsApp commerce workflow.
+              </p>
+
+              <!-- Technical Highlights -->
+              <div class="project-highlights">
+                <h4 class="highlights-title">Key Implementation Highlights:</h4>
+                <ul class="highlights-list">
+                  <li>
+                    <strong>Interactive Cake Menu:</strong> Filterable catalog of 10+ artisan cakes (Dutch Truffle, Black Forest, Red Velvet, Cheesecakes) with dietary tags (Egg / Pure Eggless).
+                  </li>
+                  <li>
+                    <strong>Dynamic Weight &amp; Price Calculator:</strong> Real-time price calculation in INR (₹) based on user-selected cake weights (0.5 Kg, 1.0 Kg, 2.0 Kg).
+                  </li>
+                  <li>
+                    <strong>Instant WhatsApp Checkout:</strong> Generates a pre-formatted, detailed WhatsApp message with customer name, phone, chosen cake, weight, price, and delivery date with zero friction.
+                  </li>
+                  <li>
+                    <strong>Interactive 3D Showcase:</strong> Integrated 3D cake showcase with interactive 360-degree rotation and smooth rendering.
+                  </li>
+                  <li>
+                    <strong>Mobile-First UX:</strong> Slide-out navigation drawer and sticky quick-action bar for rapid ordering on mobile devices.
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Tech Stack Badges -->
+              <div class="project-tech-stack">
+                <span class="tech-badge">HTML5</span>
+                <span class="tech-badge">CSS3</span>
+                <span class="tech-badge">JavaScript (ES6+)</span>
+                <span class="tech-badge">Three.js</span>
+                <span class="tech-badge">WhatsApp API</span>
+                <span class="tech-badge">Mobile Responsive</span>
+              </div>
+
+              <!-- Action Links -->
+              <div class="project-actions">
+                <a href="sri-homemade-cakes/index.html" target="_blank" rel="noopener" class="btn btn-primary">
+                  <span>Visit Live Website</span>
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+                <button type="button" class="btn btn-outline open-preview-modal-btn" data-preview-url="sri-homemade-cakes/index.html" data-preview-title="Sri Homemade Cakes">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  <span>Interactive Live Preview</span>
+                </button>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+        <!-- 
+        ========================================================================
+        EDITABLE SECONDARY PROJECTS SECTION
+        You can replace or add new projects below as you build more .NET applications.
+        ========================================================================
+        -->
+        <div class="secondary-projects-grid reveal">
+
+          <!-- Project Card 2 (Editable Placeholder: .NET CRUD App) -->
+          <div class="sub-project-card">
+            <div class="sub-card-header">
+              <div class="sub-project-icon">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+              </div>
+              <span class="sub-project-type">.NET Application</span>
+            </div>
+            <h3 class="sub-project-title">Student &amp; Course Management Portal</h3>
+            <p class="sub-project-desc">
+              A structured .NET web application with MVC architecture for managing student enrollments, instructor assignments, and course catalogs with full Create, Read, Update, and Delete operations.
+            </p>
+            <div class="sub-project-tech">
+              <span>C#</span>
+              <span>ASP.NET Core</span>
+              <span>SQL Server</span>
+              <span>Bootstrap</span>
+            </div>
+            <div class="sub-project-footer">
+              <span class="status-badge-sm">🛠️ In Active Development</span>
+              <!-- EDITABLE: Replace '#' with your GitHub repository link when ready -->
+              <a href="https://github.com/pavithrait25-oss" target="_blank" rel="noopener" class="link-arrow">
+                <span>View Repository</span>
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Project Card 3 (Editable Placeholder: SQL Database Design) -->
+          <div class="sub-project-card">
+            <div class="sub-card-header">
+              <div class="sub-project-icon">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.66 4.03 3 9 3s9-1.34 9-3V5M3 12c0 1.66 4.03 3 9 3s9-1.34 9-3"/></svg>
+              </div>
+              <span class="sub-project-type">Database Architecture</span>
+            </div>
+            <h3 class="sub-project-title">Retail Order &amp; Inventory SQL Database</h3>
+            <p class="sub-project-desc">
+              Comprehensive relational database schema for retail transactions. Features normalized multi-table schemas (3NF), complex multi-table joins, stored procedures, and data integrity constraints.
+            </p>
+            <div class="sub-project-tech">
+              <span>SQL Server</span>
+              <span>T-SQL</span>
+              <span>Stored Procedures</span>
+              <span>Relational Design</span>
+            </div>
+            <div class="sub-project-footer">
+              <span class="status-badge-sm">📊 Completed Schema</span>
+              <!-- EDITABLE: Replace '#' with your database script link when ready -->
+              <a href="https://github.com/pavithrait25-oss" target="_blank" rel="noopener" class="link-arrow">
+                <span>Explore Schema</span>
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================
+         SECTION 6: SERVICES
+         ======================================================== -->
+    <section id="services" class="section services-section">
+      <div class="container">
+        
+        <!-- Section Header -->
+        <div class="section-header reveal">
+          <div class="section-pill">05 / WHAT I DELIVER</div>
+          <h2 class="section-title">Services &amp; Software Solutions</h2>
+          <p class="section-subtitle">Professional website development, backend programming, and technical training solutions.</p>
+        </div>
+
+        <div class="services-grid reveal">
+
+          <!-- Service 1: Custom Website Development -->
+          <div class="service-card">
+            <div class="service-icon-wrap">
+              <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.8">
+                <rect x="2" y="3" width="20" height="14" rx="2" stroke-linecap="round"/>
+                <line x1="8" y1="21" x2="16" y2="21" stroke-linecap="round"/>
+                <line x1="12" y1="17" x2="12" y2="21" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="service-title">Custom Website Development</h3>
+            <p class="service-desc">
+              Modern, fast-loading, responsive business and portfolio websites designed from scratch. Clean HTML, CSS, and modern JavaScript tailored for desktop and mobile visitors.
+            </p>
+            <ul class="service-checklist">
+              <li><span>✓</span> Mobile-first responsive layout</li>
+              <li><span>✓</span> Fast load speed &amp; clean code</li>
+              <li><span>✓</span> Semantic SEO fundamentals</li>
+              <li><span>✓</span> Cross-browser compatibility</li>
+            </ul>
+            <a href="#contact" class="service-link">Discuss Your Website &rarr;</a>
+          </div>
+
+          <!-- Service 2: .NET Application Development -->
+          <div class="service-card">
+            <div class="service-icon-wrap">
+              <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.8">
+                <polyline points="16 18 22 12 16 6" stroke-linecap="round" stroke-linejoin="round"/>
+                <polyline points="8 6 2 12 8 18" stroke-linecap="round" stroke-linejoin="round"/>
+                <line x1="14" y1="4" x2="10" y2="20" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="service-title">.NET &amp; C# Application Development</h3>
+            <p class="service-desc">
+              Developing structured backend logic, application modules, and CRUD workflows using C# and ASP.NET. Emphasizing object-oriented principles and reliable error handling.
+            </p>
+            <ul class="service-checklist">
+              <li><span>✓</span> Robust C# OOP architecture</li>
+              <li><span>✓</span> ASP.NET MVC structure &amp; routing</li>
+              <li><span>✓</span> Secure database integration</li>
+              <li><span>✓</span> Maintainable, well-commented code</li>
+            </ul>
+            <a href="#contact" class="service-link">Inquire About .NET Roles &rarr;</a>
+          </div>
+
+          <!-- Service 3: SQL Server Database Design -->
+          <div class="service-card">
+            <div class="service-icon-wrap">
+              <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.8">
+                <ellipse cx="12" cy="5" rx="9" ry="3"/>
+                <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/>
+                <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/>
+              </svg>
+            </div>
+            <h3 class="service-title">Database Design &amp; SQL Queries</h3>
+            <p class="service-desc">
+              Designing relational database schemas, drafting optimized SQL queries, creating normalized tables, views, and integrity constraints for Microsoft SQL Server.
+            </p>
+            <ul class="service-checklist">
+              <li><span>✓</span> Normalized schema design (1NF to 3NF)</li>
+              <li><span>✓</span> Complex multi-table JOINs &amp; filters</li>
+              <li><span>✓</span> Data integrity &amp; foreign keys</li>
+              <li><span>✓</span> CRUD operations &amp; stored procedures</li>
+            </ul>
+            <a href="#contact" class="service-link">Request Database Assistance &rarr;</a>
+          </div>
+
+          <!-- Service 4: Software Training & Mentorship -->
+          <div class="service-card">
+            <div class="service-icon-wrap">
+              <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/>
+                <circle cx="9" cy="7" r="4"/>
+                <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/>
+              </svg>
+            </div>
+            <h3 class="service-title">Programming Training &amp; Mentorship</h3>
+            <p class="service-desc">
+              Drawing on 2 years of professional Software Trainer experience at Apollo Computer Education to mentor beginners and students in programming fundamentals.
+            </p>
+            <ul class="service-checklist">
+              <li><span>✓</span> Clear C &amp; C++ core fundamentals</li>
+              <li><span>✓</span> OOP concepts explained with live examples</li>
+              <li><span>✓</span> Practical code exercises &amp; debugging</li>
+              <li><span>✓</span> Patient, structured mentoring approach</li>
+            </ul>
+            <a href="#contact" class="service-link">Book a Training Session &rarr;</a>
+          </div>
+
+          <!-- Service 5: Website Testing & Quality Assurance -->
+          <div class="service-card">
+            <div class="service-icon-wrap">
+              <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                <polyline points="9 12 11 14 15 10" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3 class="service-title">Website Testing &amp; QA Review</h3>
+            <p class="service-desc">
+              Comprehensive manual testing, responsive device checks, cross-browser validation, and functional verification to ensure bug-free, seamless user experiences.
+            </p>
+            <ul class="service-checklist">
+              <li><span>✓</span> Functional &amp; boundary value testing</li>
+              <li><span>✓</span> Responsive layout &amp; mobile checks</li>
+              <li><span>✓</span> Clear, actionable defect reporting</li>
+              <li><span>✓</span> User flow &amp; UX consistency checks</li>
+            </ul>
+            <a href="#contact" class="service-link">Schedule QA Review &rarr;</a>
+          </div>
+
+          <!-- Service 6: Website Maintenance & Updates -->
+          <div class="service-card">
+            <div class="service-icon-wrap">
+              <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M21.5 2v6h-6M21.34 15.57a10 10 0 11-.57-8.38l5.67-5.67" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3 class="service-title">Website Maintenance &amp; Updates</h3>
+            <p class="service-desc">
+              Keeping your existing website running smoothly with content updates, layout adjustments, performance enhancements, and bug resolutions.
+            </p>
+            <ul class="service-checklist">
+              <li><span>✓</span> Content &amp; product catalog updates</li>
+              <li><span>✓</span> Layout fixes &amp; styling enhancements</li>
+              <li><span>✓</span> Contact form &amp; link verifications</li>
+              <li><span>✓</span> Dependable ongoing support</li>
+            </ul>
+            <a href="#contact" class="service-link">Request Maintenance &rarr;</a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================
+         SECTION 7: RESUME (WITH WORKING DOWNLOAD BUTTON)
+         ======================================================== -->
+    <section id="resume" class="section resume-section">
+      <div class="container">
+        
+        <!-- Section Header -->
+        <div class="section-header reveal">
+          <div class="section-pill">06 / CURRICULUM VITAE</div>
+          <h2 class="section-title">Resume &amp; Qualifications</h2>
+          <p class="section-subtitle">Download my official resume or review my professional profile at a glance.</p>
+        </div>
+
+        <div class="resume-wrapper reveal">
+          <div class="resume-card">
+            
+            <div class="resume-card-left">
+              <div class="doc-badge">
+                <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" stroke-linecap="round" stroke-linejoin="round"/>
+                  <polyline points="14 2 14 8 20 8" stroke-linecap="round" stroke-linejoin="round"/>
+                  <line x1="16" y1="13" x2="8" y2="13" stroke-linecap="round"/>
+                  <line x1="16" y1="17" x2="8" y2="17" stroke-linecap="round"/>
+                  <polyline points="10 9 9 9 8 9" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <div class="doc-info">
+                <span class="file-format-tag">PDF Document • Ready to Download</span>
+                <h3 class="doc-title">Pavithra_Resume.pdf</h3>
+                <p class="doc-meta">Official Curriculum Vitae — Software Developer &amp; Trainer Background</p>
+              </div>
+            </div>
+
+            <!-- Working Download & Action Buttons -->
+            <div class="resume-card-actions">
+              <a href="resume/Pavithra_Resume.pdf" download="Pavithra_Resume.pdf" class="btn btn-primary btn-lg" id="downloadResumeBtn">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 15V3m0 12l-4-4m4 4l4-4M4 17v2a2 2 0 002 2h12a2 2 0 002-2v-2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <span>Download Resume (PDF)</span>
+              </a>
+              <a href="resume/Pavithra_Resume.pdf" target="_blank" rel="noopener" class="btn btn-outline btn-lg">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <span>Preview in Browser</span>
+              </a>
+            </div>
+
+          </div>
+
+          <!-- Resume Key Summary Grid -->
+          <div class="resume-summary-grid">
+            <div class="summary-box">
+              <h4>🎯 Career Objective</h4>
+              <p>Aspiring .NET Developer seeking entry into progressive software engineering environments to design, build, and optimize enterprise web services, C# applications, and SQL databases.</p>
+            </div>
+            <div class="summary-box">
+              <h4>💼 Professional Background</h4>
+              <p>2 Years as a full-time Software Trainer at Apollo Computer Education. Experienced in breaking down programming concepts, debugging code, and conducting technical training.</p>
+            </div>
+            <div class="summary-box">
+              <h4>🎓 Academic Credentials</h4>
+              <p>Master of Science (M.Sc.) and Bachelor of Science (B.Sc.) in Computer Science &amp; Information Technology with foundational honors in programming logic and software engineering.</p>
+            </div>
+            <div class="summary-box">
+              <h4>⚡ Demonstrable Competencies</h4>
+              <p>C#, .NET, ASP.NET, SQL Server, C, C++, HTML5, CSS3, JavaScript. Strong understanding of Object-Oriented Programming and database relationships.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================
+         SECTION 8: CONTACT
+         (Email, GitHub, LinkedIn, WhatsApp contact options)
+         ======================================================== -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        
+        <!-- Section Header -->
+        <div class="section-header reveal">
+          <div class="section-pill">07 / GET IN TOUCH</div>
+          <h2 class="section-title">Let's Connect &amp; Collaborate</h2>
+          <p class="section-subtitle">Interested in discussing a software developer opportunity, freelance project, or training session? Reach out anytime!</p>
+        </div>
+
+        <div class="contact-grid reveal">
+          
+          <!-- Left Column: Direct Contact Channels -->
+          <div class="contact-channels">
+
+            <!-- WhatsApp Option (Prominent) -->
+            <a href="https://wa.me/919566750694?text=Hi%20Pavithra,%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20connect!" target="_blank" rel="noopener" class="contact-card card-whatsapp">
+              <div class="channel-icon-wrap wa-icon-wrap">
+                <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor">
+                  <path d="M17.5 14.4c-.3-.1-1.7-.8-1.9-.9-.3-.1-.4-.1-.6.1-.2.3-.7.9-.8 1-.2.2-.3.2-.5.1-.3-.1-1.2-.4-2.2-1.4-.8-.7-1.4-1.6-1.5-1.9-.2-.3 0-.4.1-.6.1-.1.3-.3.4-.5.1-.1.2-.3.2-.4.1-.2 0-.3 0-.5-.1-.1-.6-1.5-.8-2-.2-.5-.4-.4-.6-.5h-.5c-.2 0-.5.1-.7.3-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3 4.8 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.5-.3z"/>
+                  <path d="M12 2a10 10 0 00-8.5 15.2L2 22l4.9-1.5A10 10 0 1012 2z"/>
+                </svg>
+              </div>
+              <div class="channel-details">
+                <span class="channel-tag">Fastest Response</span>
+                <h4 class="channel-title">WhatsApp Chat</h4>
+                <p class="channel-value">+91 9566750694</p>
+                <span class="channel-action">Click to start direct chat &rarr;</span>
+              </div>
+            </a>
+
+            <!-- Email Option with 1-Click Copy -->
+            <div class="contact-card card-email">
+              <div class="channel-icon-wrap email-icon-wrap">
+                <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M3 6.5c0-1.1.9-2 2-2h14a2 2 0 012 2v11a2 2 0 01-2 2H5a2 2 0 01-2-2v-11z"/>
+                  <path d="M3.5 7l8.5 6 8.5-6"/>
+                </svg>
+              </div>
+              <div class="channel-details">
+                <span class="channel-tag">Direct Inquiries</span>
+                <h4 class="channel-title">Email Address</h4>
+                <p class="channel-value" id="emailText">pavithrait25@gmail.com</p>
+                <div class="channel-btns">
+                  <a href="mailto:pavithrait25@gmail.com" class="btn btn-xs btn-outline">Send Mail</a>
+                  <button type="button" class="btn btn-xs btn-ghost copy-btn" id="copyEmailBtn" data-email="pavithrait25@gmail.com">
+                    <span>Copy</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- GitHub Option -->
+            <a href="https://github.com/pavithrait25-oss" target="_blank" rel="noopener" class="contact-card card-social">
+              <div class="channel-icon-wrap github-icon-wrap">
+                <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor">
+                  <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.09 3.29 9.4 7.86 10.93.57.1.78-.25.78-.55 0-.27-.01-1.16-.02-2.11-3.2.7-3.87-1.36-3.87-1.36-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.17.08 1.78 1.2 1.78 1.2 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.25.45-2.28 1.18-3.08-.12-.29-.51-1.46.11-3.04 0 0 .96-.31 3.15 1.18a10.9 10.9 0 015.74 0c2.19-1.49 3.15-1.18 3.15-1.18.62 1.58.23 2.75.11 3.04.73.8 1.18 1.83 1.18 3.08 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.06.78 2.14 0 1.55-.01 2.79-.01 3.17 0 .3.2.66.79.55A10.52 10.52 0 0023.5 12c0-6.35-5.15-11.5-11.5-11.5z"/>
+                </svg>
+              </div>
+              <div class="channel-details">
+                <span class="channel-tag">Code Repositories</span>
+                <h4 class="channel-title">GitHub Profile</h4>
+                <!-- EDITABLE: Update if your GitHub username changes -->
+                <p class="channel-value">github.com/pavithrait25-oss</p>
+                <span class="channel-action">Explore repositories &rarr;</span>
+              </div>
+            </a>
+
+            <!-- LinkedIn Option -->
+            <a href="https://www.linkedin.com/in/pavithra-p-51031b39b/" target="_blank" rel="noopener" class="contact-card card-social">
+              <div class="channel-icon-wrap linkedin-icon-wrap">
+                <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor">
+                  <path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.27c-.97 0-1.75-.79-1.75-1.76s.78-1.75 1.75-1.75 1.75.78 1.75 1.75-.78 1.76-1.75 1.76zm13.5 12.27h-3v-5.6c0-3.37-4-3.11-4 0v5.6h-3v-11h3v1.76c1.4-2.58 7-2.77 7 2.47v6.77z"/>
+                </svg>
+              </div>
+              <div class="channel-details">
+                <span class="channel-tag">Professional Network</span>
+                <h4 class="channel-title">LinkedIn Profile</h4>
+                <!-- EDITABLE: Update if your LinkedIn URL changes -->
+                <p class="channel-value">https://www.linkedin.com/in/pavithra-p-51031b39b/</p>
+                <span class="channel-action">Connect on LinkedIn &rarr;</span>
+              </div>
+            </a>
+
+            <!-- Location Card -->
+            <div class="contact-card card-location">
+              <div class="channel-icon-wrap loc-icon-wrap">
+                <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 21s-7-6.2-7-11.5A7 7 0 0119 9.5C19 14.8 12 21 12 21z"/>
+                  <circle cx="12" cy="9.5" r="2.5"/>
+                </svg>
+              </div>
+              <div class="channel-details">
+                <span class="channel-tag">Current Base</span>
+                <h4 class="channel-title">Location</h4>
+                <p class="channel-value">Hosur - 635109, Tamil Nadu, India</p>
+                <span class="channel-note">Open to remote &amp; on-site positions</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Right Column: Interactive Contact Form -->
+          <div class="contact-form-container">
+            <div class="form-card">
+              <div class="form-header">
+                <h3>Send a Message</h3>
+                <p>Fill out the form below to initiate an email or instant WhatsApp conversation.</p>
+              </div>
+
+              <form id="contactForm" class="contact-form" novalidate>
+                <div class="form-group">
+                  <label for="contactName">Your Name <span class="required">*</span></label>
+                  <input type="text" id="contactName" name="name" class="form-input" placeholder="e.g. John Doe" required />
+                  <span class="form-error" id="nameError"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="contactEmail">Your Email <span class="required">*</span></label>
+                  <input type="email" id="contactEmail" name="email" class="form-input" placeholder="e.g. john@example.com" required />
+                  <span class="form-error" id="emailError"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="contactSubject">Inquiring About</label>
+                  <select id="contactSubject" name="subject" class="form-select">
+                    <option value=".NET Developer Job Opportunity">.NET Developer Job Opportunity</option>
+                    <option value="IT / Software Engineering Role">IT / Software Engineering Role</option>
+                    <option value="Website Development Project">Website Development Project</option>
+                    <option value="Software Training &amp; Mentorship">Software Training &amp; Mentorship</option>
+                    <option value="General Inquiry / Networking">General Inquiry / Networking</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="contactMessage">Message <span class="required">*</span></label>
+                  <textarea id="contactMessage" name="message" class="form-textarea" rows="4" placeholder="Hello Pavithra, I came across your portfolio and would like to discuss..." required></textarea>
+                  <span class="form-error" id="messageError"></span>
+                </div>
+
+                <div class="form-actions">
+                  <button type="submit" class="btn btn-primary btn-block" id="formSubmitBtn">
+                    <span>Send Message via Email</span>
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </button>
+
+                  <button type="button" class="btn btn-wa-block" id="sendViaWhatsAppBtn">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-1.9-.9-.3-.1-.4-.1-.6.1-.2.3-.7.9-.8 1-.2.2-.3.2-.5.1-.3-.1-1.2-.4-2.2-1.4-.8-.7-1.4-1.6-1.5-1.9-.2-.3 0-.4.1-.6.1-.1.3-.3.4-.5.1-.1.2-.3.2-.4.1-.2 0-.3 0-.5-.1-.1-.6-1.5-.8-2-.2-.5-.4-.4-.6-.5h-.5c-.2 0-.5.1-.7.3-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3 4.8 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.5-.3z"/><path d="M12 2a10 10 0 00-8.5 15.2L2 22l4.9-1.5A10 10 0 1012 2z"/></svg>
+                    <span>Send This Note to WhatsApp Directly</span>
+                  </button>
+                </div>
+
+                <div class="form-feedback" id="formFeedback" role="alert"></div>
+              </form>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================
+       SECTION 9: FOOTER WITH SOCIAL LINKS
+       ======================================================== -->
+  <footer class="footer">
+    <div class="container footer-container">
+      
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#home" class="brand-monogram-lg">PV</a>
+          <div>
+            <h3 class="footer-name">Pavithra P</h3>
+            <p class="footer-tagline">Aspiring .NET Developer &amp; Former Software Trainer</p>
+          </div>
+        </div>
+
+        <nav class="footer-nav" aria-label="Footer Navigation">
+          <ul class="footer-nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <!-- Social Icons in Footer -->
+        <div class="footer-socials">
+          <a href="https://wa.me/919566750694?text=Hi%20Pavithra!" target="_blank" rel="noopener" class="footer-social-icon" aria-label="WhatsApp" title="WhatsApp">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-1.9-.9-.3-.1-.4-.1-.6.1-.2.3-.7.9-.8 1-.2.2-.3.2-.5.1-.3-.1-1.2-.4-2.2-1.4-.8-.7-1.4-1.6-1.5-1.9-.2-.3 0-.4.1-.6.1-.1.3-.3.4-.5.1-.1.2-.3.2-.4.1-.2 0-.3 0-.5-.1-.1-.6-1.5-.8-2-.2-.5-.4-.4-.6-.5h-.5c-.2 0-.5.1-.7.3-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3 4.8 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.5-.3z"/><path d="M12 2a10 10 0 00-8.5 15.2L2 22l4.9-1.5A10 10 0 1012 2z"/></svg>
+          </a>
+          <a href="mailto:pavithrait25@gmail.com" class="footer-social-icon" aria-label="Email" title="Email">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6.5c0-1.1.9-2 2-2h14a2 2 0 012 2v11a2 2 0 01-2 2H5a2 2 0 01-2-2v-11z"/><path d="M3.5 7l8.5 6 8.5-6"/></svg>
+          </a>
+          <a href="https://github.com/pavithrait25-oss" target="_blank" rel="noopener" class="footer-social-icon" aria-label="GitHub" title="GitHub">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.09 3.29 9.4 7.86 10.93.57.1.78-.25.78-.55 0-.27-.01-1.16-.02-2.11-3.2.7-3.87-1.36-3.87-1.36-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.17.08 1.78 1.2 1.78 1.2 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.25.45-2.28 1.18-3.08-.12-.29-.51-1.46.11-3.04 0 0 .96-.31 3.15 1.18a10.9 10.9 0 015.74 0c2.19-1.49 3.15-1.18 3.15-1.18.62 1.58.23 2.75.11 3.04.73.8 1.18 1.83 1.18 3.08 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.06.78 2.14 0 1.55-.01 2.79-.01 3.17 0 .3.2.66.79.55A10.52 10.52 0 0023.5 12c0-6.35-5.15-11.5-11.5-11.5z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/pavithra-p-51031b39b/" target="_blank" rel="noopener" class="footer-social-icon" aria-label="LinkedIn" title="LinkedIn">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.27c-.97 0-1.75-.79-1.75-1.76s.78-1.75 1.75-1.75 1.75.78 1.75 1.75-.78 1.76-1.75 1.76zm13.5 12.27h-3v-5.6c0-3.37-4-3.11-4 0v5.6h-3v-11h3v1.76c1.4-2.58 7-2.77 7 2.47v6.77z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copyright">
+          &copy; <span id="currentYear">2026</span> Pavithra P. Designed with modern HTML5, CSS3 &amp; JavaScript. Inspired by clean digital craftsmanship.
+        </p>
+        <button type="button" class="back-to-top" id="backToTopBtn" aria-label="Scroll back to top">
+          <span>Back to Top</span>
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 15l-6-6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ========================================================
+       FLOATING WHATSAPP BUTTON (ALWAYS ACCESSIBLE)
+       ======================================================== -->
+  <a href="https://wa.me/919566750694?text=Hi%20Pavithra,%20I%20saw%20your%20portfolio!" target="_blank" rel="noopener" class="floating-wa-btn" aria-label="Direct WhatsApp Contact" title="Chat on WhatsApp">
+    <span class="wa-tooltip">Chat with Pavithra</span>
+    <span class="wa-pulse"></span>
+    <svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor">
+      <path d="M17.5 14.4c-.3-.1-1.7-.8-1.9-.9-.3-.1-.4-.1-.6.1-.2.3-.7.9-.8 1-.2.2-.3.2-.5.1-.3-.1-1.2-.4-2.2-1.4-.8-.7-1.4-1.6-1.5-1.9-.2-.3 0-.4.1-.6.1-.1.3-.3.4-.5.1-.1.2-.3.2-.4.1-.2 0-.3 0-.5-.1-.1-.6-1.5-.8-2-.2-.5-.4-.4-.6-.5h-.5c-.2 0-.5.1-.7.3-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3 4.8 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.5-.3z"/>
+      <path d="M12 2a10 10 0 00-8.5 15.2L2 22l4.9-1.5A10 10 0 1012 2z"/>
+    </svg>
+  </a>
+
+  <!-- ========================================================
+       MODAL: IN-PAGE LIVE PROJECT PREVIEW
+       ======================================================== -->
+  <div class="preview-modal-backdrop" id="previewModal" aria-hidden="true">
+    <div class="preview-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="previewModalTitle">
+      <div class="modal-chrome">
+        <div class="modal-header-left">
+          <div class="modal-dots">
+            <span class="b-dot b-red"></span>
+            <span class="b-dot b-yellow"></span>
+            <span class="b-dot b-green"></span>
+          </div>
+          <h3 id="previewModalTitle" class="modal-title">Live Preview</h3>
+        </div>
+        <div class="modal-actions">
+          <a href="#" id="modalExternalLink" target="_blank" rel="noopener" class="modal-action-btn" title="Open full tab">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+            <span>Open in Tab</span>
+          </a>
+          <button type="button" class="modal-close-btn" id="closePreviewModalBtn" aria-label="Close Preview">&times;</button>
+        </div>
+      </div>
+      <div class="modal-iframe-container">
+        <iframe id="previewIframe" src="about:blank" title="Interactive Project Preview" loading="lazy"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
