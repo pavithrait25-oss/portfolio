@@ -1,0 +1,175 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#140b08" />
+      <stop offset="50%" stop-color="#24120c" />
+      <stop offset="100%" stop-color="#3d1d14" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f6d365" />
+      <stop offset="100%" stop-color="#fda085" />
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2a1710" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#1b0e0a" stop-opacity="0.9" />
+    </linearGradient>
+    <linearGradient id="waGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#25D366" />
+      <stop offset="100%" stop-color="#128C7E" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#bgGrad)" rx="16" />
+
+  <!-- Subtle grid pattern -->
+  <g opacity="0.07" stroke="#ffffff" stroke-width="1">
+    <line x1="0" y1="50" x2="800" y2="50" />
+    <line x1="0" y1="100" x2="800" y2="100" />
+    <line x1="0" y1="150" x2="800" y2="150" />
+    <line x1="0" y1="200" x2="800" y2="200" />
+    <line x1="0" y1="250" x2="800" y2="250" />
+    <line x1="0" y1="300" x2="800" y2="300" />
+    <line x1="0" y1="350" x2="800" y2="350" />
+    <line x1="0" y1="400" x2="800" y2="400" />
+    <line x1="0" y1="450" x2="800" y2="450" />
+    <line x1="100" y1="0" x2="100" y2="500" />
+    <line x1="200" y1="0" x2="200" y2="500" />
+    <line x1="300" y1="0" x2="300" y2="500" />
+    <line x1="400" y1="0" x2="400" y2="500" />
+    <line x1="500" y1="0" x2="500" y2="500" />
+    <line x1="600" y1="0" x2="600" y2="500" />
+    <line x1="700" y1="0" x2="700" y2="500" />
+  </g>
+
+  <!-- Browser Chrome Bar -->
+  <rect x="0" y="0" width="800" height="42" fill="#1b110d" rx="16 16 0 0" />
+  <circle cx="28" cy="21" r="5" fill="#ff5f56" />
+  <circle cx="44" cy="21" r="5" fill="#ffbd2e" />
+  <circle cx="60" cy="21" r="5" fill="#27c93f" />
+
+  <!-- URL Bar -->
+  <rect x="180" y="9" width="440" height="24" rx="12" fill="#2a1710" stroke="#4a2a1e" stroke-width="1" />
+  <text x="400" y="25" fill="#e5b894" font-family="'Segoe UI', Roboto, sans-serif" font-size="11" text-anchor="middle" font-weight="500">
+    🔒 https://srihomemadecakes.local — Artisan Fresh Cakes
+  </text>
+
+  <!-- Header Section -->
+  <g transform="translate(40, 65)">
+    <!-- Brand -->
+    <text x="0" y="24" fill="#ffffff" font-family="'Playfair Display', Georgia, serif" font-size="20" font-weight="bold">
+      Sri Homemade Cakes
+    </text>
+    <text x="185" y="20" fill="#e89d6c" font-family="'Segoe UI', sans-serif" font-size="14">✨</text>
+    <rect x="620" y="4" width="100" height="28" rx="14" fill="url(#waGrad)" />
+    <text x="670" y="22" fill="#ffffff" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="bold" text-anchor="middle">
+      Order Now 💬
+    </text>
+  </g>
+
+  <!-- Hero Banner in mockup -->
+  <g transform="translate(40, 115)">
+    <rect width="720" height="150" rx="12" fill="url(#cardGrad)" stroke="#4a271c" stroke-width="1.5" />
+    
+    <!-- Hero Text -->
+    <text x="35" y="45" fill="#f8c291" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="600" letter-spacing="1.5">
+      100% FRESHLY BAKED TO ORDER
+    </text>
+    <text x="35" y="80" fill="#ffffff" font-family="'Playfair Display', Georgia, serif" font-size="24" font-weight="bold">
+      Handcrafted Cakes for Every
+    </text>
+    <text x="35" y="110" fill="url(#goldGrad)" font-family="'Playfair Display', Georgia, serif" font-size="24" font-weight="bold">
+      Sweet Celebration
+    </text>
+    <text x="35" y="132" fill="#c49a88" font-family="'Segoe UI', sans-serif" font-size="12">
+      Pure ingredients • Egg &amp; Eggless available • Same-day doorstep delivery
+    </text>
+
+    <!-- 3D Cake Graphic Mockup -->
+    <g transform="translate(560, 75)" filter="url(#glow)">
+      <!-- Pedestal Stand -->
+      <ellipse cx="60" cy="55" rx="50" ry="12" fill="#d4af37" opacity="0.8" />
+      <rect x="52" y="45" width="16" height="12" fill="#b89327" />
+      <ellipse cx="60" cy="45" rx="42" ry="10" fill="#f5e6c8" />
+      
+      <!-- Tier 1 Base -->
+      <path d="M 22 25 C 22 38, 98 38, 98 25 L 98 42 C 98 55, 22 55, 22 42 Z" fill="#3e1d14" />
+      <ellipse cx="60" cy="25" rx="38" ry="10" fill="#52271c" />
+      <ellipse cx="60" cy="23" rx="36" ry="9" fill="#e91e63" opacity="0.9" />
+
+      <!-- Tier 2 Top -->
+      <path d="M 34 5 C 34 16, 86 16, 86 5 L 86 20 C 86 31, 34 31, 34 20 Z" fill="#3e1d14" />
+      <ellipse cx="60" cy="5" rx="26" ry="7" fill="#f48fb1" />
+
+      <!-- Cherry and Candle -->
+      <line x1="60" y1="5" x2="60" y2="-12" stroke="#fff" stroke-width="2.5" stroke-linecap="round" />
+      <circle cx="60" cy="-16" r="4" fill="#ffd700" filter="url(#glow)" />
+      <circle cx="60" cy="-16" r="2" fill="#ff5722" />
+    </g>
+  </g>
+
+  <!-- 3 Menu Item Cards Mockup -->
+  <!-- Card 1: Dutch Truffle -->
+  <g transform="translate(40, 285)">
+    <rect width="226" height="180" rx="10" fill="url(#cardGrad)" stroke="#4a271c" stroke-width="1.2" />
+    <!-- Image placeholder -->
+    <rect x="12" y="12" width="202" height="75" rx="8" fill="#351a13" />
+    <circle cx="113" cy="49" r="24" fill="#4a2217" />
+    <text x="113" y="55" font-size="22" text-anchor="middle">🍫</text>
+    <rect x="18" y="18" width="55" height="16" rx="4" fill="#25d366" opacity="0.9" />
+    <text x="45.5" y="29.5" fill="#fff" font-family="'Segoe UI', sans-serif" font-size="9" font-weight="bold" text-anchor="middle">Eggless</text>
+    
+    <text x="14" y="106" fill="#ffffff" font-family="'Segoe UI', sans-serif" font-size="13" font-weight="bold">Dutch Chocolate Truffle</text>
+    <text x="14" y="122" fill="#c49a88" font-family="'Segoe UI', sans-serif" font-size="10">Rich ganache with cocoa layers</text>
+    
+    <text x="14" y="152" fill="#f8c291" font-family="'Segoe UI', sans-serif" font-size="14" font-weight="bold">₹550</text>
+    <text x="54" y="152" fill="#8d6e63" font-family="'Segoe UI', sans-serif" font-size="10">/ 0.5 Kg</text>
+    
+    <rect x="135" y="136" width="78" height="24" rx="12" fill="#25D366" />
+    <text x="174" y="152" fill="#ffffff" font-family="'Segoe UI', sans-serif" font-size="10" font-weight="bold" text-anchor="middle">Order 💬</text>
+  </g>
+
+  <!-- Card 2: Red Velvet -->
+  <g transform="translate(286, 285)">
+    <rect width="226" height="180" rx="10" fill="url(#cardGrad)" stroke="#4a271c" stroke-width="1.2" />
+    <!-- Image placeholder -->
+    <rect x="12" y="12" width="202" height="75" rx="8" fill="#351a13" />
+    <circle cx="113" cy="49" r="24" fill="#5c151e" />
+    <text x="113" y="55" font-size="22" text-anchor="middle">🍰</text>
+    <rect x="18" y="18" width="55" height="16" rx="4" fill="#25d366" opacity="0.9" />
+    <text x="45.5" y="29.5" fill="#fff" font-family="'Segoe UI', sans-serif" font-size="9" font-weight="bold" text-anchor="middle">Eggless</text>
+    
+    <text x="14" y="106" fill="#ffffff" font-family="'Segoe UI', sans-serif" font-size="13" font-weight="bold">Red Velvet Cream Cheese</text>
+    <text x="14" y="122" fill="#c49a88" font-family="'Segoe UI', sans-serif" font-size="10">Velvety crumb with rich frosting</text>
+    
+    <text x="14" y="152" fill="#f8c291" font-family="'Segoe UI', sans-serif" font-size="14" font-weight="bold">₹600</text>
+    <text x="54" y="152" fill="#8d6e63" font-family="'Segoe UI', sans-serif" font-size="10">/ 0.5 Kg</text>
+    
+    <rect x="135" y="136" width="78" height="24" rx="12" fill="#25D366" />
+    <text x="174" y="152" fill="#ffffff" font-family="'Segoe UI', sans-serif" font-size="10" font-weight="bold" text-anchor="middle">Order 💬</text>
+  </g>
+
+  <!-- Card 3: Butterscotch Delight -->
+  <g transform="translate(533, 285)">
+    <rect width="226" height="180" rx="10" fill="url(#cardGrad)" stroke="#4a271c" stroke-width="1.2" />
+    <!-- Image placeholder -->
+    <rect x="12" y="12" width="202" height="75" rx="8" fill="#351a13" />
+    <circle cx="113" cy="49" r="24" fill="#5a3d12" />
+    <text x="113" y="55" font-size="22" text-anchor="middle">🎂</text>
+    <rect x="18" y="18" width="55" height="16" rx="4" fill="#ff9800" opacity="0.9" />
+    <text x="45.5" y="29.5" fill="#fff" font-family="'Segoe UI', sans-serif" font-size="9" font-weight="bold" text-anchor="middle">Bestseller</text>
+    
+    <text x="14" y="106" fill="#ffffff" font-family="'Segoe UI', sans-serif" font-size="13" font-weight="bold">Caramel Butterscotch</text>
+    <text x="14" y="122" fill="#c49a88" font-family="'Segoe UI', sans-serif" font-size="10">Crunchy praline with caramel glaze</text>
+    
+    <text x="14" y="152" fill="#f8c291" font-family="'Segoe UI', sans-serif" font-size="14" font-weight="bold">₹500</text>
+    <text x="54" y="152" fill="#8d6e63" font-family="'Segoe UI', sans-serif" font-size="10">/ 0.5 Kg</text>
+    
+    <rect x="135" y="136" width="78" height="24" rx="12" fill="#25D366" />
+    <text x="174" y="152" fill="#ffffff" font-family="'Segoe UI', sans-serif" font-size="10" font-weight="bold" text-anchor="middle">Order 💬</text>
+  </g>
+</svg>
