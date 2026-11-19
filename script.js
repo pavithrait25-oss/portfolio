@@ -530,7 +530,7 @@ const email = document.getElementById("email").value;
 const inquiryType = document.getElementById("inquiry_type").value;
 const message = document.getElementById("message").value;
         
-        await emailjs.send(
+        await emailjs.send()
             "service_3u959gm",
           "template_axi6fxa",
  {
