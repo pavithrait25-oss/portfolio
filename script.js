@@ -527,10 +527,16 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         await emailjs.send(
-            service_3u959gm,
-          template_axi6fxa,
-
-            aFi8DKwqR9 - kWaqIp
+            "service_3u959gm",
+          "template_axi6fxa",
+ {
+        customer_name: name,
+        customer_email: email,
+        inquiry_type:inquiryType,
+        message: message
+    },
+    {
+        publicKey:"aFi8DKwqR9-kWaqIp"
         );
 
         // Success state
