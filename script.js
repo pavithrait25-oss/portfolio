@@ -354,8 +354,9 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!toastContainer) return;
     const toast = document.createElement('div');
     toast.className = `toast ${type}`;
+    const icon = type === 'toast-success' ? '✓' : type === 'toast-error' ? '✕' : 'ℹ';
     toast.innerHTML = `
-      <span>${type === 'toast-success' ? '✓' : 'ℹ'}</span>
+      <span>${icon}</span>
       <span>${message}</span>
     `;
     toastContainer.appendChild(toast);
@@ -406,14 +407,29 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   /* ==========================================================================
-     13. CONTACT FORM VALIDATION & DIRECT WHATSAPP INTEGRATION
+     13. CONTACT FORM VALIDATION & EMAILJS INTEGRATION
      ========================================================================== */
+  // EmailJS Configuration - Update these keys with your EmailJS account details if changed
+  const EMAILJS_CONFIG = {
+    publicKey: 'YOUR_PUBLIC_KEY',     // e.g. 'user_xxxxxxxxxxxx' or public key from EmailJS Account
+    serviceId: 'YOUR_SERVICE_ID',     // e.g. 'service_xxxxxxx' from EmailJS Email Services
+    templateId: 'YOUR_TEMPLATE_ID'    // e.g. 'template_xxxxxxx' from EmailJS Email Templates
+  };
+
+  // Initialize EmailJS if public key is provided and library loaded
+  if (typeof emailjs !== 'undefined' && EMAILJS_CONFIG.publicKey && EMAILJS_CONFIG.publicKey !== 'YOUR_PUBLIC_KEY') {
+    emailjs.init({
+      publicKey: EMAILJS_CONFIG.publicKey
+    });
+  }
+
   const contactForm = document.getElementById('contactForm');
   const nameInput = document.getElementById('contactName');
   const emailInput = document.getElementById('contactEmail');
   const subjectInput = document.getElementById('contactSubject');
   const messageInput = document.getElementById('contactMessage');
   const formFeedback = document.getElementById('formFeedback');
+  const formSubmitBtn = document.getElementById('formSubmitBtn');
   const sendViaWhatsAppBtn = document.getElementById('sendViaWhatsAppBtn');
 
   const validateEmail = (email) => {
@@ -463,8 +479,14 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
+    let isSubmitting = false;
+
+    contactForm.addEventListener('submit', async (e) => {
       e.preventDefault();
+
+      // Prevent duplicate submissions while sending
+      if (isSubmitting) return;
+
       if (!validateForm()) return;
 
       const name = nameInput.value.trim();
@@ -472,14 +494,64 @@ document.addEventListener('DOMContentLoaded', () => {
       const subject = subjectInput.value;
       const message = messageInput.value.trim();
 
-      // Launch user's default email client pre-populated
-      const mailtoLink = `mailto:pavithrait25@gmail.com?subject=${encodeURIComponent(`[Portfolio Inquiry] ${subject} - ${name}`)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\nInquiry Type: ${subject}\n\nMessage:\n${message}`)}`;
+      // Lock form and submit button to prevent duplicate submissions
+      isSubmitting = true;
+      if (formSubmitBtn) {
+        formSubmitBtn.disabled = true;
+        formSubmitBtn.classList.add('loading');
+      }
 
-      window.location.href = mailtoLink;
+      formFeedback.className = 'form-feedback';
+      formFeedback.textContent = '';
 
-      formFeedback.className = 'form-feedback success';
-      formFeedback.textContent = 'Thank you! Opening your email client to dispatch the message to pavithrait25@gmail.com.';
-      showToast('Opening email client...', 'toast-info');
+      // Template parameters passed to EmailJS template
+      // Matches standard template parameter names: name/from_name, email/from_email, subject, message
+      const templateParams = {
+        name: name,
+        from_name: name,
+        email: email,
+        from_email: email,
+        reply_to: email,
+        subject: subject,
+        message: message
+      };
+
+      try {
+        if (typeof emailjs === 'undefined') {
+          throw new Error('EmailJS library is not loaded');
+        }
+
+        // Initialize if not already initialized
+        if (EMAILJS_CONFIG.publicKey && EMAILJS_CONFIG.publicKey !== 'YOUR_PUBLIC_KEY') {
+          emailjs.init({ publicKey: EMAILJS_CONFIG.publicKey });
+        }
+
+        await emailjs.send(
+            service_3u959gm,
+          template_axi6fxa,
+          formElement ,
+            aFi8DKwqR9 - kWaqIp
+        );
+
+        // Success state
+        formFeedback.className = 'form-feedback success';
+        formFeedback.textContent = 'Thank you! Your message has been sent successfully.';
+        showToast('Thank you! Your message has been sent successfully.', 'toast-success');
+        contactForm.reset();
+      } catch (error) {
+        console.error('EmailJS submission error:', error);
+        // Error state
+        formFeedback.className = 'form-feedback error';
+        formFeedback.textContent = 'Sorry! Message could not be sent. Please try again.';
+        showToast('Sorry! Message could not be sent. Please try again.', 'toast-error');
+      } finally {
+        // Unlock submit button and form state
+        isSubmitting = false;
+        if (formSubmitBtn) {
+          formSubmitBtn.disabled = false;
+          formSubmitBtn.classList.remove('loading');
+        }
+      }
     });
   }
 
