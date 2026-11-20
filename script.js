@@ -525,10 +525,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (EMAILJS_CONFIG.publicKey && EMAILJS_CONFIG.publicKey !== 'YOUR_PUBLIC_KEY') {
           emailjs.init({ publicKey: EMAILJS_CONFIG.publicKey });
         }
-const name = document.getElementById("name").value;
-const email = document.getElementById("email").value;
-const inquiryType = document.getElementById("inquiry_type").value;
-const message = document.getElementById("message").value;
+
         
         await emailjs.send()
             "service_3u959gm",
