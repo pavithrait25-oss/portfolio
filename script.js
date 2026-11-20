@@ -528,8 +528,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const name = document.getElementById('contactName').value;
 const email = document.getElementById('contactEmail').value;
-const message = document.getElementById('contactmessage').value;
+const message = document.getElementById('contactMessage').value;
 const inquiryType = document.getElementById('contactSubject').value;
+        
         await emailjs.send(
             "service_3u959gm",
           "template_axi6fxa",
