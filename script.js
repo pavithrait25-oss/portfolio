@@ -527,7 +527,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         
-        await emailjs.send()
+        await emailjs.send(
             "service_3u959gm",
           "template_axi6fxa",
  {
@@ -538,6 +538,7 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     {
         publicKey:"aFi8DKwqR9-kWaqIp"
+    }
         );
 
         // Success state
