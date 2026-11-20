@@ -526,7 +526,10 @@ document.addEventListener('DOMContentLoaded', () => {
           emailjs.init({ publicKey: EMAILJS_CONFIG.publicKey });
         }
 
-        
+        const name = document.getElementById('name').value;
+const email = document.getElementById('email').value;
+const message = document.getElementById('message').value;
+const inquiryType = document.getElementById('contactSubject').value;
         await emailjs.send(
             "service_3u959gm",
           "template_axi6fxa",
